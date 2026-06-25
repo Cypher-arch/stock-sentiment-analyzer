@@ -108,7 +108,7 @@ def logo_works(url):
         return False
 
 st.sidebar.header("Configuration")
-API_KEY = st.sidebar.text_input("NewsAPI Key", type="password")
+API_KEY = st.sidebar.text_input("NewsAPI Key", type="password", value=st.secrets.get("NEWS_API_KEY", ""))
 ticker = st.sidebar.text_input("Stock Ticker", value="").upper()
 company = st.sidebar.text_input("Company Name (for news search)", value="")
 days = st.sidebar.slider("Days of stock history", 7, 90, 30)
