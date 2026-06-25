@@ -1,0 +1,12 @@
+﻿streamlit
+transformers
+torch
+huggingface-hub
+tokenizers
+yfinance
+pytz
+plotly
+pandas
+newsapi-python
+sentencepiece
+requests
